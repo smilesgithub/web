@@ -1,0 +1,59 @@
+body {
+	background-color: #ffffff; 
+	background-image: url("sand.jpg");
+	background-repeat: no-repeat;/*repeat默认方式 xy方向重复 no-repeat 不重复 repeat-x/y x/y方向重复*/
+ 	background-position: top;/*center/top/bottom/left/right*/
+}
+
+h1 {
+	background-color: #00ff00;
+	text-align: center;/*left/right*/
+	text-shadow: 2px 2px 2px #ff0000;/*右偏移量 下偏移量 模糊距离 阴影颜色*/
+	font-family: serif;
+	font-style: italic;
+}
+
+p {
+	font-weight: bold;
+}
+
+#pid {
+	color: rgb(180,100,50);
+	text-indent: 2em;
+}
+
+.classname {
+	font-size: 20px;
+}
+
+a:link {
+	color: black;
+}
+
+a:visited {
+	color: purple;
+}
+
+a:hover {
+	color: brown;
+}
+
+a:active {
+	color: green;
+}
+
+#box1 {
+	background-color: #ffff0f;
+	height: 150px; 
+	width: 180px;
+}
+
+#box2 {
+	background-color: #ff0000;
+	height: 150px; 
+	width: 180px;
+}
+
+#spanid {
+ 	color: blue;
+}
