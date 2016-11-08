@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>精确控制图片位置</title>
+	<meta charset="utf-8">
+	<style>
+		#test1{
+			border:1px;
+			width:50px;
+			height:500px;
+			background-image:url(1.jpg);
+			background-repeat:no-repeat;
+			background-position:center top;
+		}
+
+		#test2{
+			width:200px;
+			height:30px;
+			border:1px solid blue;
+			/*
+			background-image: url(2.jpg);
+			background-position: -150px  -530px;
+			*/
+			background:gray url(2.jpg) no-repeat -150px -530px;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="test1"></div>
+	<div id="test2"></div>
+</body>
+</html>
