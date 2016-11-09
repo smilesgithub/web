@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>css选择器</title>
+	<style>
+		#test1{
+			width:100px;
+			height:50px;
+			border:1px solid blue;
+		}
+
+		.test2{
+			width:100px;
+			height:50px;
+			border:1px solid red;
+		}
+
+		div{
+			width: 100px;
+			height:100px;
+			background:orange;
+			margin-bottom: 10px;
+		}
+
+		div p{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<div id="test1">test1</div>
+	<div class="test2">test2</div>
+	<div>普通div
+		<p id="test4">我是div中的P标签</p>
+	</div>
+	<p>我是独立P标签</p>
+
+	<div>id选择器，class选择器，标签选择器，派生选择器</div>
+</body>
+</html>

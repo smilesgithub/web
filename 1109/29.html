@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css优先级</title>
+	<meta charset="utf-8">
+	<style>
+		p{
+			color:red;
+		}
+
+		.tese{
+			color:green;
+		}
+
+		#test1{
+			color:blue;
+		}
+
+		div #test2{
+			color:pink;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p id="test1" class="test2">天天向上</p>
+	</div>
+</body>
+</html>
