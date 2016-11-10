@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>整齐的表格</title>
+	<meta charset="utf-8">
+	<style>
+		table{
+			/*border-collapse: separate;
+			border-spacing: 20px;*/
+			border-collapse: collapse;
+		}
+		td{
+			border:2px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td colspan="4">1</td>
+		</tr>
+		<tr>
+			<td>21</td>
+			<td>22</td>
+			<td>23</td>
+			<td rowspan="2">24</td>
+		</tr>
+		<tr>
+			<td>25</td>
+			<td>26</td>
+			<td>27</td>
+		</tr>
+	</table>
+</body>
+</html>
