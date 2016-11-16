@@ -30,3 +30,8 @@
 	color:red;
 	background-color:purple;
 }
+
+#main {
+	clear: left;
+}
+
