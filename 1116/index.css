@@ -1,0 +1,32 @@
+
+#container{
+	width:800px;
+	margin:auto;
+}
+
+#header{
+	background:gray;
+}
+
+#nav{
+	padding: 0px;
+}
+
+#nav li{
+	float:left;
+	list-style: none;
+	width:98px;
+	margin:1px;
+	text-align:center;
+}
+
+#nav a{
+	display:block;
+	background-color:orange;
+	width:98px;
+}
+
+#nav a:hover{
+	color:red;
+	background-color:purple;
+}
