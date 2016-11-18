@@ -1,0 +1,35 @@
+p{
+	background-color: red;
+}
+
+#blue{
+	color:green;
+}
+
+.songti{
+	font-size: 20px;
+}		
+
+.zhengkai{
+	font-size: 25px;
+}
+
+#green{
+	background-color: maroon;
+}
+
+h1,h2{
+	font-family: "微软雅黑";
+}
+
+h1{
+	border-bottom: 1px solid red; 
+}
+#acsd{
+	font-family:"微软雅黑";
+
+}
+
+a{
+	font-family: "宋体";
+}
