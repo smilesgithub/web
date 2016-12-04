@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Starbuzz Bean Machine</title>
+	<style type="text/css">
+		body {
+			background: #efe5d0 top left;
+			margin: 20px;
+		}
+
+		form {
+			display: table;
+			padding: 10px;
+			border: thin dotted #7e7e7e;
+			background-color: #e1ceb8;
+		}
+
+		form textarea{
+			width: 500px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<h1>The Starbuzz Bean Machine</h1>
+	<h2>Fill out the form below and click "order now" to order</h2>
+	<form>
+		Name:<input type="text" name="name"><br>
+		Adderss:<input type="text" name="address"><br>
+		City:<input type="text" name="city"><br>
+		State:<input type="text" name="state"><br>
+		Zip:<input type="text" name="zip"><br>
+		Phone:<input type="tel" name="phone"><br>
+		<input type="submit" name="Order now">
+
+	<p>
+		type:<br>
+		<input type="radio" name="beantype" value="whole">whole bean<br>
+		<input type="radio" name="beantype" value="ground">ground
+	</p>
+
+	<p>
+		number of bags :<input type="number" name="bags" min="1" max="10"><br>
+		must arrive by date :<input type="date" name="date">
+	</p>
+
+	<p>
+		customer comments:<br>
+		<textarea name="comments"></textarea>
+	</p>
+
+	<p>
+		<input type="submit" value="order now">
+	</p>
+	</form>
+</body>
+</html>
