@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>特殊的选择器</title>
+	<style type="text/css">
+		p:first-letter {
+			font-size: 3em;
+		}
+
+		p:first-line {
+			font-style: italic;
+		}
+
+		p {
+			color: purple;
+		}
+		img[width] {
+			border: black thin solid;
+		}
+
+		img[height="300"] {
+			border: red thin solid;
+		}
+
+		img[alt="flowers"] {
+			border: #ccc thin solid;
+		}
+
+		h1+p {
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+	<h1>中国新闻网</h1>
+	<p>高铁运能得到较大释放，客流饱满区段出行压力进一步缓解。为更好地满足广大旅客的出行需求，铁路部门进一步优化运力资源配置，扩大杭深线、沪昆高铁等客流饱满方向运力，除新线外新图还安排在已开通客专增开12对直通动车组列车，并安排15对动车组列车改为重联或长编组运行。</p>
+	<img src="http://img2.utuku.china.com/550x0/news/20161205/3cd5bafc-e497-470d-894b-48e4eecd75ff.jpg">
+</body>
+</html>
