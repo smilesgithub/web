@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>js基础</title>
+</head>
+<body>
+	<button type="button" onclick="fun();">点击这里</button>
+</body>
+</html>
+
+<script type="text/javascript">
+	document.write("<h1>this is a heading</h1>");
+	document.write("<p id='pid'>this is a paragraph</p>");
+	function fun() {
+		var p=document.getElementById('pid');
+		console.log(p.innerHTML);
+		p.innerHTML="hello javascript";
+	}
+</script>
