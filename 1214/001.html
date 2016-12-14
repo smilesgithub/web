@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>数组</title>
+</head>
+<body>
+	<p>
+		当你需要放一些数据，特别是每个数据将通过一个对应的索引数字来访问时，你需要数组；<br>
+		比如，要记录个班所有学生的成绩，你可以：<br>
+		var m1=89; <br>
+		var m2=78; <br>
+		var m3=90; <br>
+	</p>
+
+		var marks=new Array;
+		marks[0]=89;
+		marks[1]=78;
+		marks[2]=90;<br>
+
+		创建数组：
+		var a=new Array();
+		var b=new Array(size);
+		var c=new Array(d1,d2......dn);
+		var d=[d1,d2......dn] <br>
+
+		访问数组：
+		[]运算符访问数组中的一个单元；
+		a[0],可以读也可以写
+		索引从0开始
+		a[x]=n直接创建了数组中的一个单元X，并且赋值了N <br>
+<script type="text/javascript">
+		var colors=["red","blue","green"];
+		alert(colors[0]);
+		alert(colors[2]);
+		alert(colors[3]);
+		colors[2]="black";
+		colors[3]="brown";
+		colors[100]="cyan";
+		alert(colors[0]);
+		alert(colors[2]);
+		alert(colors[3]);
+		alert(colors[100]);
+		alert(colors[99]);
+
+		数组长度：
+		a.length给出数组a的长度，是其中最大的下标+1；
+		var colors=["red","blue","green"];
+		var names=[];
+		alert(colors.length);
+		alert(names.length);
+		colors[4]="brown";
+		alert(colors.length);
+</script>	
+</body>
+</html>
