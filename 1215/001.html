@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>对象</title>
+</head>
+<body>
+	<p>
+		对象是JavaScript的一种复合数据类型，它可以把多个数据集中在一个变量中，并且给其中的每个数据起名字；<br>
+		或者说，对象是一个属性集合，每个属性有自己的名字和值；<br>
+		JavaScript并不像其他OPP语言那样有类的概念，不是先设计类再制造对象；
+	</p>
+
+	<script type="text/javascript">
+		var o=new Object();
+		o.name="John Mike";
+		o.age=30;
+		o.salary=300;
+		for(var x in o) {
+			alert(x+"="+o[x]);
+		}
+	</script>
+</body>
+</html>
