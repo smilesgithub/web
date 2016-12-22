@@ -1,3 +1,5 @@
+window.onload = init;
+
 function init () {
 	var button = document.getElementById("addButton");
 	button.onclick = handleButtonClick;
@@ -11,7 +13,7 @@ function handleButtonClick() {
 	// 	alert("please enter a song");
 	// }
 	// else {
-	// 	alert("Adding" + songName);
+	// 	alert("Adding " + songName);
 	// }
 	var li = document.createElement("li");
 	li.innerHTML = songName;
