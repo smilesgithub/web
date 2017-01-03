@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>函数的声明</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p>可以通过函数声明语句来定义一个函数，函数声明语句以关键字function开始，其后跟有函数名 参数列表和函数体代码块</p>
+	<p>
+		声明函数的格式：
+		function 函数名（参数）{
+			代码块
+		}
+
+		function sum (a,b) {
+			return a+b;
+		}
+
+		其中sum为函数名，a和b为参数名，函数体中对两个参数进行了加运算，并通过return返回结果，将代码写成函数的形式之后，函数内的代码就只能通过调用该函数的方式来执行
+	</p>
+
+	<p>
+		返回值：
+		返回值return用来在函数体内向调用本函数的位置返回某些数据，例如：
+		function add(a,b) {
+		var result = a+b;
+		}
+		var sum = add(1,2);     sum 的值为undefined;
+
+		当函数没有返回值的时候，会有一个默认的返回值undefined，所以上述代码执行时，
+		var sum = add();  等价于var sum = undefined；
+		有返回值
+		function add(a,b) {
+		var result = a+b;
+		return result;
+		}
+		var sum = add(1,2);     sum的值为3；
+	</p>
+</body>
+</html>
