@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>石头剪刀布</title>
+	<style type="text/css">
+		/*p{
+			background-color: pink;
+			font-size: 20px;
+			text-align: center;
+		}*/
+
+		#container{
+			background-color: pink;
+			font-size: 20px;
+			text-align: center;
+			width: 500px;
+			margin: auto;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<p>你出什么</p>
+		<button onclick="ren('shitou')" type="button">石头</button></br>
+		<button onclick="ren('jiandao')" type="button">剪刀</button></br>
+		<button onclick="ren('bu')" type="button">布</button></br>
+		<p id="res"></p>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	function diannao() {
+		var array=["jiandao","shitou","bu"];
+		var i=Math.floor(Math.random()*3);
+		return array[i];
+	}
+	function show(jieguo) {
+		var p=document.getElementById('res');
+		p.innerHTML=jieguo;
+	}
+	function ren(chu) {
+		var dn=diannao();
+		if (chu==dn) {
+			show("equal");
+		} else {
+			if(chu=="shitou") {
+				if (dn=="jiandao") {
+					show("you win");
+				} else {
+					show("you lose");
+				}
+			} else if (chu=="jiandao") {
+				if (dn=="shitou") {
+					show("you lose");
+				} else {
+					show("you win");
+				}
+			} else {
+				// ren == "bu"
+				if (dn=="jiandao") {
+					show("you lose");
+				} else {
+					show("you win");
+				}
+			}
+		}
+	}
+</script>
