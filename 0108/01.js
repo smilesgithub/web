@@ -1,11 +1,11 @@
 function Robot(name) {
-	this.name=name;
-	this.say=function(){
-		console.log(this.name)
-	}
+	// name = "bower"
+	this.name = name; // "bower"
+	this.say = function(){ console.log(this.name); }
 }
-var robot = new Robot('bower');
-function say(){
-	console.log(this.name)
-}
-say.call(robot)
+
+var robot1 = new Robot('bower');
+robot1.say();
+
+var robot2 = new Robot('power');
+robot2.say();
