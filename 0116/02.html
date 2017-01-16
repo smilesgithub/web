@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js中获取键盘事件</title>
+	<meta charset="utf-8">
+</head>
+<body>
+</body>
+</html>
+
+<script type="text/javascript">
+	function create_elem(tag, key){
+		var elem = document.createElement(tag);
+		elem.innerHTML = key;
+		document.body.appendChild(elem);
+	}
+	document.onkeydown = function(event){
+		var keyCode = event.keyCode;
+		var keyName = String.fromCharCode(keyCode);
+		create_elem("p", keyName);
+	}
+</script>
