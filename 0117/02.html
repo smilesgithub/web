@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	function create(num){
+		var elem = document.createElement("p");
+		document.body.appendChild(elem);
+		elem.innerHTML = num;
+	}
+	document.onkeydown = function (event){
+		var keycode = event.keyCode;
+		var key = String.fromCharCode(keycode);
+		create(key);
+	}
+</script>
