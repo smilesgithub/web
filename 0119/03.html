@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>data</title>
+</head>
+<body>
+	<!-- <P id="time_id"></P> -->
+</body>
+</html>
+<script type="text/javascript">
+	var elem = document.createElement("p");
+	elem.id = "time_id"
+	document.body.appendChild(elem);
+
+	function toTime(time) {
+		return time < 10 ? "0" + time.toString() : time.toString();
+	}
+
+	function update() {
+		var date = new Date()
+		var year = date.getFullYear();
+		var month = date.getMonth() + 1;
+		var day = date.getDate();
+		var hour = date.getHours();
+		var min = date.getMinutes();
+		var sec = date.getSeconds();
+		var elem = document.getElementById("time_id");
+		elem.innerHTML = toTime(year) + toTime(month) + toTime(day) +
+		" " + toTime(hour) + ":" + toTime(min) + ":" + toTime(sec);
+	}
+	setInterval(update, 500);
+</script>

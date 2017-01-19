@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>俄罗斯方块</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			background-color: pink;
+		}
+		
+	</style>
+</head>
+<body>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	var blockWidth = 30;
+	var blockHeight = 30;
+	var blockMargin = 1;
+	var bgWidthCnt = 10;
+	var bgHeightCnt = 20;
+
+	function createBackground(){
+		var background = document.createElement("div");
+		background.id = "bgid";
+		background.style.width = blockWidth * bgWidthCnt + "px";
+		background.style.height = blockHeight * bgHeightCnt + "px";
+		background.style.backgroundColor = 'purple';
+		background.style.margin = "auto";
+		document.body.appendChild(background);
+		return background;
+	}
+	var bg = createBackground();
+	function createBlock(){
+		var block = document.createElement("div");
+		block.style.width = blockWidth - blockMargin * 2 + "px";
+		block.style.height = blockHeight - blockMargin * 2 + "px";
+		block.style.backgroundColor = "white";
+		block.style.margin = blockMargin + "px";
+		bg.appendChild(block);
+	}
+	createBlock()
+</script>
